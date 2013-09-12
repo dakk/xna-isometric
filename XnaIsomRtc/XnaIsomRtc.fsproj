@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AB3A6FB4-C61A-4FB1-8ABD-4970D656FC3C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>XnaIsomRtc</RootNamespace>
+    <AssemblyName>XnaIsomRtc</AssemblyName>
+    <BuildOrder>
+      <BuildOrder>
+        <String>AssemblyInfo.fs</String>
+        <String>Engine/WorldMap/CellType.fs</String>
+        <String>Engine/WorldMap/MapCell.fs</String>
+        <String>Engine/WorldMap/TileMap.fs</String>
+        <String>Engine/Actors/Actor.fs</String>
+        <String>Engine/Actors/Person.fs</String>
+        <String>Engine/World.fs</String>
+        <String>Engine/UI/Drawer.fs</String>
+        <String>Engine/UI/Window.fs</String>
+        <String>Engine/UI/UiManager.fs</String>
+        <String>Engine/IsoGame.fs</String>
+        <String>Program.fs</String>
+      </BuildOrder>
+    </BuildOrder>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>True</Externalconsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>True</Externalconsole>
+    <Tailcalls>true</Tailcalls>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="Lidgren.Network">
+      <HintPath>..\..\..\..\Repositories\Mono\MonoGameLinux\Lidgren.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>..\..\..\..\Repositories\Mono\MonoGameLinux\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK">
+      <HintPath>..\..\..\..\Repositories\Mono\MonoGameLinux\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="Tao.Sdl">
+      <HintPath>..\..\..\..\Repositories\Mono\MonoGameLinux\Tao.Sdl.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.fs" />
+    <Compile Include="Program.fs" />
+    <Compile Include="Engine\IsoGame.fs" />
+    <Compile Include="Engine\World.fs" />
+    <Compile Include="Engine\WorldMap\MapCell.fs" />
+    <Compile Include="Engine\WorldMap\TileMap.fs" />
+    <Compile Include="Engine\WorldMap\CellType.fs" />
+    <Compile Include="Engine\Actors\Actor.fs" />
+    <Compile Include="Engine\Actors\Person.fs" />
+    <Compile Include="Engine\UI\UiManager.fs" />
+    <Compile Include="Engine\UI\Window.fs" />
+    <Compile Include="Engine\UI\Drawer.fs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" />
+  <ItemGroup>
+    <Folder Include="Content\" />
+    <Folder Include="Engine\" />
+    <Folder Include="Engine\Actors\" />
+    <Folder Include="Content\Tiles\" />
+    <Folder Include="Content\Tiles\Map\" />
+    <Folder Include="Engine\WorldMap\" />
+    <Folder Include="Engine\UI\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\Tiles\Map\grass.xnb" />
+    <None Include="Content\Tiles\Map\sand.xnb" />
+    <None Include="Content\Tiles\Map\sand.png" />
+    <None Include="Content\Tiles\Map\grass.png" />
+    <None Include="Content\Tiles\Map\tile_64.png" />
+    <None Include="Content\Tiles\Map\tile_64.xnb" />
+    <None Include="TODO" />
+  </ItemGroup>
+</Project>

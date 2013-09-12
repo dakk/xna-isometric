@@ -1,0 +1,28 @@
+Graphics:
+	* Cut and convert some isometric tiles
+		- Streets with grass
+		- Height tile (mountain)
+		x Wooden things
+		
+	* Cut and convert an isometric Actor
+		- Person
+		
+	* Get an xnb font
+		
+		
+Code:
+	* Implement Actor-agnostic Actor::Draw
+	
+	* Implement Person
+	
+	* Simple UI
+		- xWinFormsLib
+		- RuminateGUI
+		- diy:
+			use gui image block to draw windows, buttons, and other similar things
+	
+	* Draw something on the screen
+	
+	
+Misc:
+	* Find a name

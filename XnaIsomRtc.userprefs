@@ -1,0 +1,41 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="XnaIsomRtc/Engine/Actors/Actor.fs">
+    <Files>
+      <File FileName="XnaIsomRtc/Engine/UI/Window.fs" Line="1" Column="1" />
+      <File FileName="XnaIsomRtc/Engine/UI/Drawer.fs" Line="1" Column="1" />
+      <File FileName="XnaIsomRtc/TODO" Line="16" Column="20" />
+      <File FileName="XnaIsomRtc/Engine/WorldMap/MapCell.fs" Line="1" Column="1" />
+      <File FileName="XnaIsomRtc/Engine/World.fs" Line="1" Column="1" />
+      <File FileName="XnaIsomRtc/Engine/UI/UiManager.fs" Line="15" Column="97" />
+      <File FileName="XnaIsomRtc/Engine/IsoGame.fs" Line="31" Column="9" />
+      <File FileName="XnaIsomRtc/Engine/Actors/Actor.fs" Line="15" Column="7" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="XnaIsomRtc" expanded="True">
+            <Node name="Engine" expanded="True">
+              <Node name="Actors" expanded="True">
+                <Node name="Actor.fs" selected="True" />
+              </Node>
+              <Node name="UI" expanded="True" />
+              <Node name="WorldMap" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <AuthorInfo Name="Davide Gessa" Email="gessadavide@gmail.com" Copyright="Davide Gessa" Company="" Trademark="" />
+</Properties>

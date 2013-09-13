@@ -9,6 +9,8 @@ type World(graphics, window, content) =
     member val TileMap : WorldMap.TileMap = new WorldMap.TileMap (0, 0, null) with get, set
     member val MapTiles : Map<int,(Graphics.Texture2D * Vector2)> = Map.empty with get, set // Texture * Offset
     
+    member val Actors : Actors.Actor list = [] with get, set
+    
     member val Graphics : GraphicsDeviceManager = graphics with get, set
     member val SpriteBatch : Graphics.SpriteBatch = new Graphics.SpriteBatch (graphics.GraphicsDevice) with get, set
     member val Window : GameWindow = window with get, set
@@ -45,12 +47,34 @@ type World(graphics, window, content) =
                 if (rand.Next() |> float) % 10.0 > 7.0 then
                     let tree = (((rand.Next() |> float) % 5.0) |> int) + 3
                     (this.TileMap.CellAt (x, y)).AddTilesLevel ([this.MapTiles.[tree]]) |> ignore
+                    
+        // Put some persons
+        this.Actors <- 
+          [ 
+            new Actors.Person (this.SpriteBatch, this.Content.Load<Graphics.Texture2D>("Actors/Person/Set1"), (11,19), 6, new Point (200, 100)) 
+          ]
+                                          
+    member this.Update (gameTime) =
+        let rec update_actors (acts : Actors.Actor list) =
+            match acts with
+                | [] -> ()
+                | a::al -> a.Update (gameTime); update_actors al
                 
-                
+        update_actors this.Actors
+        
+                                
     member this.Draw (gameTime) =
         // Draw the tilemap
         this.SpriteBatch.Begin ()
         this.TileMap.Draw (new Point (0, 0), this.ViewPosition, 64)
+        
+        let rec draw_actors (acts : Actors.Actor list) =
+            match acts with
+                | [] -> ()
+                | a::al -> a.Draw (gameTime, this.ViewPosition, 12); draw_actors al
+                
+        draw_actors this.Actors
+        
         this.SpriteBatch.End ()
         
         

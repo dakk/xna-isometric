@@ -9,8 +9,7 @@ type TileMap(width : int, height : int, spriteBatch : SpriteBatch) =
     member val Width : int = width with get, set
     member val Height : int = height with get, set
     member val Cells : MapCell array = Array.init (width * height) 
-                                                  (fun i -> 
-                                                    new MapCell (spriteBatch, CellType.Empty))
+                                                  (fun i -> new MapCell (spriteBatch, CellType.Empty))
     
     // Retrive cell at position (x, y)
     member this.CellAt (x, y) =

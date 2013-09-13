@@ -14,8 +14,10 @@ Graphics:
 Code:
 	x Implement Actor-agnostic Actor::Draw
 	x Implement Person
+	x Implements ActorsManager (moved on world)
+	x Draw something on the screen
 	
-	* Implements ActorsManager
+	* Fix Actor/Map rendering problem
 	
 	* Simple UI
 		- xWinFormsLib
@@ -23,7 +25,6 @@ Code:
 		- diy:
 			use gui image block to draw windows, buttons, and other similar things
 	
-	x Draw something on the screen
 	
 	
 Misc:

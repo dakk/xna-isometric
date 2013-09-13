@@ -2,7 +2,7 @@ namespace XnaIsomRtc.Actors
 
 open System
 
-type ActorManager() = 
+type ActorsManager() = 
     member val Actors : Actor list = [] with get, set
     
     

@@ -1,19 +1,21 @@
 Graphics:
+	x Cut and convert an isometric Actor
+		x Person
+	x Get an xnb font
+
 	* Cut and convert some isometric tiles
 		- Streets with grass
 		- Height tile (mountain)
-		x Wooden things
+		x Wooden things		
 		
-	* Cut and convert an isometric Actor
-		- Person
-		
-	* Get an xnb font
+	
 		
 		
 Code:
-	* Implement Actor-agnostic Actor::Draw
+	x Implement Actor-agnostic Actor::Draw
+	x Implement Person
 	
-	* Implement Person
+	* Implements ActorsManager
 	
 	* Simple UI
 		- xWinFormsLib
@@ -21,7 +23,7 @@ Code:
 		- diy:
 			use gui image block to draw windows, buttons, and other similar things
 	
-	* Draw something on the screen
+	x Draw something on the screen
 	
 	
 Misc:

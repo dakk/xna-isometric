@@ -77,7 +77,7 @@
     <Compile Include="Engine\UI\UiManager.fs" />
     <Compile Include="Engine\UI\Window.fs" />
     <Compile Include="Engine\UI\Drawer.fs" />
-    <Compile Include="Engine\Actors\ActorManager.fs" />
+    <Compile Include="Engine\Actors\ActorsManager.fs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" />
   <ItemGroup>

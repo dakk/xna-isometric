@@ -46,7 +46,7 @@ type IsoGame() as this =
         // 
         this.testPerson <- new Actors.Person (this.spriteBatch, 
                                               this.Content.Load<Graphics.Texture2D>("Actors/Person/Set1"), 
-                                              (12,19), 6)
+                                              (11,19), 6)
         
         
         
@@ -87,6 +87,6 @@ type IsoGame() as this =
         this.world.Draw (gameTime)
         this.uiManager.Draw (gameTime)
         
-        this.testPerson.Draw (new Point (10, 10), 12)
+        this.testPerson.Draw (new Point (300, 306), 12)
         
         base.Draw (gameTime)

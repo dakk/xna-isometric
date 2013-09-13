@@ -21,6 +21,7 @@
         <String>Engine/UI/Drawer.fs</String>
         <String>Engine/UI/Window.fs</String>
         <String>Engine/UI/UiManager.fs</String>
+        <String>Engine/Actors/ActorManager.fs</String>
         <String>Engine/IsoGame.fs</String>
         <String>Program.fs</String>
       </BuildOrder>
@@ -51,16 +52,16 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
     <Reference Include="Lidgren.Network">
-      <HintPath>..\..\..\..\Repositories\Mono\MonoGameLinux\Lidgren.Network.dll</HintPath>
+      <HintPath>..\..\..\Mono\MonoGameLinux\Lidgren.Network.dll</HintPath>
     </Reference>
     <Reference Include="MonoGame.Framework">
-      <HintPath>..\..\..\..\Repositories\Mono\MonoGameLinux\MonoGame.Framework.dll</HintPath>
+      <HintPath>..\..\..\Mono\MonoGameLinux\MonoGame.Framework.dll</HintPath>
     </Reference>
     <Reference Include="OpenTK">
-      <HintPath>..\..\..\..\Repositories\Mono\MonoGameLinux\OpenTK.dll</HintPath>
+      <HintPath>..\..\..\Mono\MonoGameLinux\OpenTK.dll</HintPath>
     </Reference>
     <Reference Include="Tao.Sdl">
-      <HintPath>..\..\..\..\Repositories\Mono\MonoGameLinux\Tao.Sdl.dll</HintPath>
+      <HintPath>..\..\..\Mono\MonoGameLinux\Tao.Sdl.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -76,6 +77,7 @@
     <Compile Include="Engine\UI\UiManager.fs" />
     <Compile Include="Engine\UI\Window.fs" />
     <Compile Include="Engine\UI\Drawer.fs" />
+    <Compile Include="Engine\Actors\ActorManager.fs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" />
   <ItemGroup>

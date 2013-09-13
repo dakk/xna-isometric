@@ -1,24 +1,21 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="XnaIsomRtc/Engine/Actors/Actor.fs">
+﻿<Properties GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="XnaIsomRtc/Engine/Actors/ActorManager.fs">
     <Files>
-      <File FileName="XnaIsomRtc/Engine/UI/Window.fs" Line="1" Column="1" />
-      <File FileName="XnaIsomRtc/Engine/UI/Drawer.fs" Line="1" Column="1" />
       <File FileName="XnaIsomRtc/TODO" Line="16" Column="20" />
       <File FileName="XnaIsomRtc/Engine/WorldMap/MapCell.fs" Line="1" Column="1" />
       <File FileName="XnaIsomRtc/Engine/World.fs" Line="1" Column="1" />
-      <File FileName="XnaIsomRtc/Engine/UI/UiManager.fs" Line="15" Column="97" />
-      <File FileName="XnaIsomRtc/Engine/IsoGame.fs" Line="31" Column="9" />
-      <File FileName="XnaIsomRtc/Engine/Actors/Actor.fs" Line="15" Column="7" />
+      <File FileName="XnaIsomRtc/Engine/IsoGame.fs" Line="31" Column="11" />
+      <File FileName="XnaIsomRtc/Engine/Actors/Actor.fs" Line="13" Column="5" />
+      <File FileName="XnaIsomRtc/Engine/Actors/Person.fs" Line="9" Column="7" />
+      <File FileName="XnaIsomRtc/Engine/Actors/ActorManager.fs" Line="6" Column="54" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="XnaIsomRtc" expanded="True">
+          <Node name="XnaIsomRtc" expanded="True" selected="True">
             <Node name="Engine" expanded="True">
-              <Node name="Actors" expanded="True">
-                <Node name="Actor.fs" selected="True" />
-              </Node>
+              <Node name="Actors" expanded="True" />
               <Node name="UI" expanded="True" />
               <Node name="WorldMap" expanded="True" />
             </Node>

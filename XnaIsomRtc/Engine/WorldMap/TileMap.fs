@@ -19,7 +19,7 @@ type TileMap(width : int, height : int, spriteBatch : SpriteBatch) =
     
     // indexxy = indicano da che parte della tilemap si deve disegnare
     // startX e startY indicano la posizione del rendering per la cella 0,0
-    member this.Draw (index : Point, start : Point, tileSize) =
+    member this.Draw (index : Point, start : Point, tileSize : int) =
         // dir = 0 -> sin, 1 -> des, 2 -> sindes
         let rec drawLoop x y dir =
             if x < 0 || y < 0 || x >= this.Width || y >= this.Height then ()

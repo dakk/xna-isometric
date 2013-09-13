@@ -17,6 +17,7 @@ type IsoGame() as this =
     
     [<DefaultValue>] val mutable uiManager : UI.UiManager
     [<DefaultValue>] val mutable world : World
+    [<DefaultValue>] val mutable testPerson : Actors.Person
     
     
     override this.Initialize () =
@@ -28,7 +29,7 @@ type IsoGame() as this =
 
         // Create UI
         this.uiManager.Initialize ()
-        this.uiManager.AddWindow (new UI.Window (new Rectangle (90, 50, 200, 100), "Hello Window"))
+        //this.uiManager.AddWindow (new UI.Window (new Rectangle (90, 50, 200, 100), "Hello Window"))
         
         base.Initialize ()
         
@@ -40,11 +41,18 @@ type IsoGame() as this =
             
         // Load world content
         this.world.LoadContent ()
-        this.uiManager.LoadContent ()             
+        this.uiManager.LoadContent ()      
+        
+        // 
+        this.testPerson <- new Actors.Person (this.spriteBatch, 
+                                              this.Content.Load<Graphics.Texture2D>("Actors/Person/Set1"), 
+                                              (12,19), 6)
         
         
         
     override this.Update (gameTime) =
+        this.testPerson.Update (gameTime)
+        
         if GamePad.GetState(PlayerIndex.One).Buttons.Back = ButtonState.Pressed then
             this.Exit()
         
@@ -78,5 +86,7 @@ type IsoGame() as this =
         // Draw world and ui
         this.world.Draw (gameTime)
         this.uiManager.Draw (gameTime)
+        
+        this.testPerson.Draw (new Point (10, 10), 12)
         
         base.Draw (gameTime)
